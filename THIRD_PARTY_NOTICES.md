@@ -1,5 +1,15 @@
 # Third-party notices
 
+PLOP builds on the following open-source projects and models. Nothing GPL or
+noncommercial-licensed is compiled into this codebase.
+
+## Vendored code
+
+| Project | Where | License | Modifications |
+|---|---|---|---|
+| [Hive](https://github.com/bossbobster/hive) (BossBobster) | `vendor/hive/` | MIT | UI untouched. Backend only: refreshed a retired LLM model id and made `web_research.py` persist the full research report in `draft_text` so the PLOP bridge can parse structured candidates. |
+| plop prototype (this team's own earlier hackathon work) | `services/api/app/{vision,inpaint,scene3d}.py` | team-internal | Extended: configurable detect prompt (Founder hardware vocabulary), stage callbacks for SSE progress. |
+
 ## Python dependencies (pip)
 
 | Package | License | Used for |
